@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
+
 	<style>
 		body {
 			font-family: 'Space Mono', monospace;
@@ -50,6 +51,11 @@
 				margin: 70 0 70 0;
 		}
 
+		.output input[type="text"] {
+			padding: 20px 10px;
+			line-height: 28px;
+		}
+
 		.form-control {
 			font-style: italic;
 			color: grey;
@@ -60,7 +66,13 @@
 			font-family: 'Space Mono', monospace;
 			padding: 20 25 20 25;
 		}
-
+		.output {
+			line-height: 49px;
+			margin: 70 0 70 0;
+		}
+		img {
+			width: 130px;
+		}
 	</style>
 	<body>
 		<header>
@@ -101,8 +113,13 @@
   			</div>
 		</div>
 		<!--btn-->
-		<button type="button" class="btn btn-outline-secondary btn-lg">Get location in words</button>
-	
+		<div class="form-group row">
+			<button type="button" class="btn btn-outline-secondary btn-lg">Get location in words</button>
+		  <div class="col-8">
+		  	<input class="form-control output" type="text" value="your words here" id="example-text-input">
+		  </div>
+		</div>
+
 		<!--usr2-->
 		<div class="form-group row">
   			<label for="example-text-input" class="col-2 col-form-label">Recipient</label>
@@ -118,14 +135,26 @@
   			</div>
 		</div>
 		<!--btn-->
-		<button type="button" class="btn btn-outline-secondary btn-lg" >Get location in words</button>
-
+		<div class="form-group row">
+			<button type="button" class="btn btn-outline-secondary btn-lg">Get location in words</button>
+		  <div class="col-8">
+		  	<input class="form-control output" type="text" value="your words here" id="example-text-input">
+		  </div>
+		</div>
 		<div class="video">
-			<div class="embed-responsive embed-responsive-21by9">
-  		<iframe class="embed-responsive-item" src="https://www.ccv.adobe.com/v1/player/sc/US%2F0d7905b9-30a3-4bed-b423-8966133087a4/embed" allowfullscreen></iframe>
+			<div class="embed-responsive embed-responsive-4by3">
+	  		<iframe class="embed-responsive-item" src="https://www.ccv.adobe.com/v1/player/sc/US%2F0d7905b9-30a3-4bed-b423-8966133087a4/embed" allowfullscreen></iframe>
+			</div>
 		</div>
+		<div class="contact row">
+			<a href="mailto:thegeotoken@gmail.com">
+				<img src="email.png" alt="mail-icon">
+			</a>
+			<a href="https://github.com/thegeotoken/thegeotoken">
+				<img src="github.png" alt="github">
+			</a>
 		</div>
-
 		</div>
 	</body>
 </html>
+
